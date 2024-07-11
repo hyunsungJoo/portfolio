@@ -2,21 +2,20 @@
   <div id="app">
     <NavBar />
     <div class="content">
-      <img alt="Vue logo" src="./assets/logo.png">
-      <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <Profile /> <!-- 프로필 컴포넌트를 메뉴바 아래에 추가 -->
     </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import NavBar from './components/NavBar.vue'
+import Profile from './components/UserProfile.vue' // Profile 컴포넌트 임포트
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    NavBar
+    NavBar,
+    Profile // Profile 컴포넌트 등록
   }
 }
 </script>
@@ -32,6 +31,6 @@ export default {
 }
 
 .content {
-  margin-top: 80px;  /* 메뉴바 높이 만큼 여백을 추가하여 내용이 메뉴바 아래에서 시작되도록 설정 */
+  margin-top: 0px;  /* 메뉴바 높이 만큼 여백을 추가하여 내용이 메뉴바 아래에서 시작되도록 설정 */
 }
 </style>

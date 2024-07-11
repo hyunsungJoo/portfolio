@@ -39,7 +39,7 @@
   .navbar-menu {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     margin: 0;
     padding: 0;
     justify-content: center;  /* 메뉴 항목을 가운데 정렬 */
