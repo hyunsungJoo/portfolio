@@ -24,6 +24,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 .profile {
   display: flex;
   flex-direction: column; /* 세로 방향으로 배치 */
@@ -33,6 +35,7 @@ export default {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+  font-family: 'Poppins', sans-serif; /* 전체에 적용 */
 }
 
 .profile-image-wrapper {
@@ -53,12 +56,12 @@ export default {
 .profile-details h1 {
   margin: 0;
   font-size: 2rem;
-  color: #333;
+  color: white;
 }
 
 .profile-details p {
   font-size: 1.2rem;
-  color: #666;
+  color: white;
   line-height: 1.5;
   margin-top: 0.5rem;
 }

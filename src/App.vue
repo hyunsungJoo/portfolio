@@ -3,6 +3,7 @@
     <NavBar />
     <div class="content">
       <Profile /> <!-- 프로필 컴포넌트를 메뉴바 아래에 추가 -->
+      <DownloadButton/>
     </div>
   </div>
 </template>
@@ -10,12 +11,14 @@
 <script>
 import NavBar from './components/NavBar.vue'
 import Profile from './components/UserProfile.vue' // Profile 컴포넌트 임포트
+import DownloadButton from './components/DownloadButton.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    Profile // Profile 컴포넌트 등록
+    Profile, // Profile 컴포넌트 등록
+    DownloadButton
   }
 }
 </script>
