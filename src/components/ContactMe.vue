@@ -1,0 +1,87 @@
+<template>
+    <div class="contact">
+      <h2>Contact</h2>
+      <p class="description">
+        Seasoned Full Stack Software Engineer with over 8 years of hands-on experience in designing
+        and implementing robust, scalable, and innovative web solutions. Adept at leveraging a
+        comprehensive skill set encompassing front-end and back-end technologies.
+      </p>
+      <p class="email">
+        <!-- <img src="@/assets/email-icon.png" alt="Email Icon" class="email-icon"> -->
+        abmcodehub@gmail.com
+      </p>
+      <div class="social-icons">
+        <a href="https://github.com" target="_blank">
+          <!-- <img src="@/assets/github-icon.png" alt="GitHub" class="social-icon"> -->
+        </a>
+        <a href="https://velog.io" target="_blank">
+          <!-- <img src="@/assets/velog-icon.png" alt="Velog" class="social-icon"> -->
+        </a>
+      </div>
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    name: 'Contact'
+  };
+  </script>
+  
+  <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  
+  .contact {
+    padding: 2rem;
+    background-color: #191919;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .contact h2 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-left: 20rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .contact .description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .contact .email {
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .contact .email-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+  </style>
+  

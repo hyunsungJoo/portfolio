@@ -2,8 +2,12 @@
   <div id="app">
     <NavBar />
     <div class="content">
-      <Profile /> <!-- 프로필 컴포넌트를 메뉴바 아래에 추가 -->
+      <Profile/> <!-- 프로필 컴포넌트를 메뉴바 아래에 추가 -->
       <DownloadButton/>
+      <MySkills/>
+      <MyProjects/>
+      <MyExperience/>
+      <ContactMe/>
     </div>
   </div>
 </template>
@@ -12,13 +16,21 @@
 import NavBar from './components/NavBar.vue'
 import Profile from './components/UserProfile.vue' // Profile 컴포넌트 임포트
 import DownloadButton from './components/DownloadButton.vue'
+import MySkills from './components/MySkills.vue';
+import MyProjects from './components/MyProjects.vue';
+import MyExperience from './components/MyExperience.vue';
+import ContactMe from './components/ContactMe.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
     Profile, // Profile 컴포넌트 등록
-    DownloadButton
+    DownloadButton,
+    MySkills,
+    MyProjects,
+    MyExperience,
+    ContactMe
   }
 }
 </script>

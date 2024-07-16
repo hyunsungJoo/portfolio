@@ -15,8 +15,8 @@ export default {
   name: 'UserProfile', // 컴포넌트 이름
   data() {
     return {
-      profileImage: require('@/assets/profile.jpg'), // 프로필 이미지 경로
-      name: 'Your Name',
+      profileImage: require('@/assets/profile.png'), // 프로필 이미지 경로
+      name: '노력하는 개발자 주현성입니다!',
       bio: 'This is a brief introduction about yourself. You can write about your background, skills, and experiences.'
     };
   }
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
 
 .profile {
   display: flex;
@@ -43,9 +43,10 @@ export default {
 }
 
 .profile-image {
-  width: 150px;
-  height: 150px;
+  width: 213px;
+  height: 213px;
   border-radius: 50%; /* 동그란 이미지 */
+  background: linear-gradient(0deg, #ff8600 0%, #8000ff 99%);
   object-fit: cover;
 }
 
@@ -55,14 +56,16 @@ export default {
 
 .profile-details h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 50px;
   color: white;
+  font-weight: 900; /* extra bold */
 }
 
 .profile-details p {
-  font-size: 1.2rem;
+  font-size: 18px;
   color: white;
   line-height: 1.5;
   margin-top: 0.5rem;
+  font-weight: 200; /* light */
 }
 </style>

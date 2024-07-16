@@ -18,6 +18,8 @@
   </script>
   
   <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  
   .download-button-wrapper {
     display: flex;
     justify-content: center;
@@ -27,12 +29,14 @@
   }
   
   .download-button {
+    width: 170px; /* 너비 설정 */
+    height: 30px; /* 높이 설정 */
     background-color: #ffffff;
     color: #000000;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Poppins 폰트 적용 */
     font-size: 1rem;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
