@@ -42,16 +42,17 @@
   
   .contact h2 {
     font-size: 23px;
-    font-weight: 600;
-    margin-left: 20rem;
+    font-weight: 700;
+    margin-left: 15rem;
     margin-bottom: 1rem;
     text-align: left;
   }
   
   .contact .description {
     font-size: 1rem;
+    font-weight: 300;
     line-height: 1.5;
-    margin-left: 20rem;
+    margin-left: 15rem;
     margin-right: 20rem;
     margin-bottom: 1.5rem;
     text-align: left;

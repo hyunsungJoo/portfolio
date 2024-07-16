@@ -95,7 +95,7 @@
   .experience-details h3 {
     margin: 0;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
   }
   
   .position-and-period {
@@ -111,13 +111,17 @@
   }
   
   .position-and-period .period {
+    margin-right: 15rem;
     font-size: 1rem;
     color: #8491a0;
   }
   
   .description {
     margin-top: 1rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
     font-size: 1rem;
+    font-weight: 400;
     line-height: 1.5;
     color: #8491a0;
   }
