@@ -7,15 +7,19 @@
         comprehensive skill set encompassing front-end and back-end technologies.
       </p>
       <p class="email">
-        <!-- <img src="@/assets/email-icon.png" alt="Email Icon" class="email-icon"> -->
-        abmcodehub@gmail.com
+        <img src="@/assets/email-icon.png" alt="Email Icon" class="email-icon">
+        joocurtis@gmail.com
+      </p>
+      <p class="phone">
+        <img src="@/assets/email-icon.png" alt="Email Icon" class="email-icon">
+        010-6337-1867
       </p>
       <div class="social-icons">
         <a href="https://github.com" target="_blank">
-          <!-- <img src="@/assets/github-icon.png" alt="GitHub" class="social-icon"> -->
+          <img src="@/assets/github-icon.png" alt="GitHub" class="social-icon">
         </a>
         <a href="https://velog.io" target="_blank">
-          <!-- <img src="@/assets/velog-icon.png" alt="Velog" class="social-icon"> -->
+          <img src="@/assets/velog-icon.png" alt="Velog" class="social-icon">
         </a>
       </div>
     </div>
@@ -23,7 +27,7 @@
   
   <script>
   export default {
-    name: 'Contact'
+    name: 'ContactMe'
   };
   </script>
   
@@ -49,7 +53,7 @@
   }
   
   .contact .description {
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
     margin-left: 15rem;
@@ -59,15 +63,27 @@
   }
   
   .contact .email {
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 600;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    margin-left: 15rem;
+  }
+
+  .contact .phone {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    margin-left: 15rem;
   }
   
   .contact .email-icon {
+    text-align: left;
     width: 20px;
     height: 20px;
     margin-right: 0.5rem;
@@ -75,14 +91,15 @@
   
   .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 1rem;
     margin-top: 1.5rem;
+    margin-left: 15rem;
   }
   
   .social-icon {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
   }
   </style>
   
