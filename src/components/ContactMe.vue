@@ -11,8 +11,8 @@
         joocurtis@gmail.com
       </p>
       <p class="phone">
-        <img src="@/assets/email-icon.png" alt="Email Icon" class="email-icon">
-        010-6337-1867
+        <img src="@/assets/phone-icon.png" alt="Email Icon" class="email-icon">
+        +82 10-6337-1867
       </p>
       <div class="social-icons">
         <a href="https://github.com" target="_blank">

@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       profileImage: require('@/assets/profile.png'), // 프로필 이미지 경로
-      name: '노력하는 개발자 주현성입니다!',
+      name: '개발자 주현성입니다!',
       bio: 'This is a brief introduction about yourself. You can write about your background, skills, and experiences.'
     };
   }
@@ -43,6 +43,7 @@ export default {
 }
 
 .profile-image {
+  margin-top: 2rem;
   width: 213px;
   height: 213px;
   border-radius: 50%; /* 동그란 이미지 */
@@ -55,7 +56,7 @@ export default {
 }
 
 .profile-details h1 {
-  margin: 0;
+  margin-top: 1rem;
   font-size: 50px;
   color: white;
   font-weight: 900; /* extra bold */

@@ -2,19 +2,31 @@
   <div id="app">
     <NavBar />
     <div class="content">
-      <Profile/> <!-- 프로필 컴포넌트를 메뉴바 아래에 추가 -->
-      <DownloadButton/>
-      <MySkills/>
-      <MyProjects/>
-      <MyExperience/>
-      <ContactMe/>
+      <section id="about-me">
+        <Profile/>
+      </section>
+      <section id="download">
+        <DownloadButton/>
+      </section>
+      <section id="skills">
+        <MySkills/>
+      </section>
+      <section id="projects">
+        <MyProjects/>
+      </section>
+      <section id="experience">
+        <MyExperience/>
+      </section>
+      <section id="contact">
+        <ContactMe/>
+      </section>
     </div>
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
-import Profile from './components/UserProfile.vue' // Profile 컴포넌트 임포트
+import Profile from './components/UserProfile.vue'
 import DownloadButton from './components/DownloadButton.vue'
 import MySkills from './components/MySkills.vue';
 import MyProjects from './components/MyProjects.vue';
@@ -25,7 +37,7 @@ export default {
   name: 'App',
   components: {
     NavBar,
-    Profile, // Profile 컴포넌트 등록
+    Profile,
     DownloadButton,
     MySkills,
     MyProjects,
@@ -36,6 +48,17 @@ export default {
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -43,10 +66,9 @@ export default {
   text-align: center;
   background-color: #000000;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 .content {
-  margin-top: 0px;  /* 메뉴바 높이 만큼 여백을 추가하여 내용이 메뉴바 아래에서 시작되도록 설정 */
+  margin-top: 0; /* 여백을 0으로 설정하여 메뉴바와 내용이 붙도록 설정 */
 }
 </style>
