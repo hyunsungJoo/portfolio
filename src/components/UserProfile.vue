@@ -16,8 +16,8 @@ export default {
   data() {
     return {
       profileImage: require('@/assets/profile.png'), // 프로필 이미지 경로
-      name: '개발자 주현성입니다!',
-      bio: 'This is a brief introduction about yourself. You can write about your background, skills, and experiences.'
+      name: '포기하지 않는 개발자 주현성입니다!',
+      bio: '개발자에게 가장 중요한 것은 새로운 것을 배우고 적응하는 능력이라고 생각합니다. 끊임없는 노력과 지속적인 학습을 통해 신뢰받는 개발자가 되고 싶습니다. 언제나 멈추지 않는 자세로 미래를 준비하는 개발자가 되겠습니다.'
     };
   }
 };
@@ -67,6 +67,8 @@ export default {
   color: white;
   line-height: 1.5;
   margin-top: 0.5rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
   font-weight: 200; /* light */
 }
 </style>

@@ -2,9 +2,8 @@
     <div class="contact">
       <h2>Contact</h2>
       <p class="description">
-        Seasoned Full Stack Software Engineer with over 8 years of hands-on experience in designing
-        and implementing robust, scalable, and innovative web solutions. Adept at leveraging a
-        comprehensive skill set encompassing front-end and back-end technologies.
+        컴퓨터공학과를 졸업하였고 부트캠프 경험을 통해 여러 프로젝트를 설계하고 구현해 왔습니다.
+        <br>Frontend, Backend, Devops를 포괄하는 종합적인 기술 세트를 활용하는 데 능숙합니다. 
       </p>
       <p class="email">
         <img src="@/assets/email-icon.png" alt="Email Icon" class="email-icon">

@@ -7,7 +7,7 @@
           <div class="flip-card-inner">
             <!-- 카드 앞면 -->
             <div class="flip-card-front">
-              <!-- <img :src="require(`@/assets/projects/${project.image}`)" :alt="project.name" class="project-image" /> -->
+              <img :src="require(`@/assets/projects/${project.image}`)" :alt="project.name" class="project-image" />
               <div class="project-info">
                 <div class="project-info-bar">
                   <h3>{{ project.name }}</h3>
@@ -18,7 +18,9 @@
             <!-- 카드 뒷면 -->
             <div class="flip-card-back">
               <p>{{ project.description }}</p>
-              <a :href="project.link" target="_blank">링크로 이동</a>
+              <p><strong>GitHub:</strong> <a :href="project.github" target="_blank">{{ project.github }}</a></p>
+              <p><strong>Document:</strong> <a :href="project.document" target="_blank">{{ project.document }}</a></p>
+              <p><strong>Tech Stack:</strong> {{ project.techStack }}</p>
               <button @click="flipCard(project.name)">닫기</button>
             </div>
           </div>
@@ -35,23 +37,45 @@ export default {
     return {
       projects: [
         {
-          name: 'Project 1',
-          description: 'This is a description of project 1.',
-          image: 'project1.png',
-          link: 'https://example.com/project1'
+          name: '디지털 배지를 더한 인사관리 시스템',
+          description: '직원들의 참여와 동기부여를 증진시키기위해 디지털 배지를 추가한 인사관리 시스템을 개발하였습니다.',
+          github: 'https://github.com/orgs/9-1379/repositories',
+          document: 'https://drive.google.com/drive/folders/1STHo8GCeXOdwqUNwRMNgFFPmqKjmcDMv',
+          techStack: 'Linux, HTML, CSS, Vue.js, Java, Spring Boot, Jpa, Jwt, MariaDB, Nginx, Docker, Jenkins, AWS',
+          image: 'timebox-planner.png' // Image file can be added if needed
         },
         {
-          name: 'Project 2',
-          description: 'This is a description of project 2.',
-          image: 'project2.png',
-          link: 'https://example.com/project2'
+          name: '개인 웹 포트폴리오',
+          description: '포트폴리오 용도로 제작한 웹사이트입니다. 지금 화면이 바로 이 웹사이트 입니다.',
+          github: 'https://github.com/hyunsungJoo/portfolio',
+          document: '',
+          techStack: 'Linux, HTML, CSS, Vue.js',
+          image: 'timebox-planner.png' // Image file can be added if needed
         },
         {
-          name: 'Project 3',
-          description: 'This is a description of project 3.',
-          image: 'project3.png',
-          link: 'https://example.com/project3'
-        }
+          name: '프로젝트 성능, 부하 테스트',
+          description: '기존에 있던 Spring 프로젝트에 nginx proxy서버와 Caching을 설정하여 Ngrinder부하테스트 및 성능 개선을 시도해 본 프로젝트입니다.',
+          github: 'https://github.com/orgs/devops-team-project-4nd/repositories',
+          document: 'https://drive.google.com/drive/folders/1E7LBtnw-6dbyvwZruF8XkbblYqjfyGGZ',
+          techStack: 'Linux, Docker, Nginx, Ngrinder',
+          image: 'devops-project.png' // Image file can be added if needed
+        },
+        {
+          name: '인사관리시스템 프론트엔드 개발',
+          description: '인사관리시스템 프론트엔드를 개발, 배포하였고 데이터베이스를 Json 서버로 따로 배포하여 관리하였습니다.',
+          github: 'https://github.com/orgs/Workflow-Ease/repositories',
+          document: 'https://drive.google.com/drive/folders/1vtyhetWmrONe_bnrrJTmbZ5IBXi7wWdI',
+          techStack: 'Linux, HTML, CSS, Vue.js, Fly.io, Firebase',
+          image: 'timebox-planner.png' // Image file can be added if needed
+        },
+        {
+          name: '감정표현을 더한 ToDoList',
+          description: '인사관리시스템 프론트엔드를 개발, 배포하였고 데이터베이스를 Json 서버로 따로 배포하여 관리하였습니다.',
+          github: 'https://github.com/hyunsungJoo/be01-2nd-5Team-To-Do-List',
+          document: 'https://drive.google.com/drive/folders/1sSPMl0pjmu6vPPA6dkUTNJMtUYi4OV4P',
+          techStack: 'Java, Spring Boot, Jpa, Jwt, MariaDB, Docker',
+          image: 'todolist-project.png' // Image file can be added if needed
+        },
       ],
       flippedProject: null
     };
@@ -191,12 +215,14 @@ export default {
 .flip-card-back p {
   font-size: 16px;
   margin-bottom: 10px;
+  word-wrap: break-word; /* 긴 URL이 카드 밖으로 삐져나오지 않도록 설정 */
 }
 
 .flip-card-back a {
   font-size: 16px;
   color: #ffcc00;
   text-decoration: none;
+  word-wrap: break-word; /* 긴 URL이 카드 밖으로 삐져나오지 않도록 설정 */
 }
 
 .flip-card-back button {
@@ -209,4 +235,3 @@ export default {
   cursor: pointer;
 }
 </style>
-
