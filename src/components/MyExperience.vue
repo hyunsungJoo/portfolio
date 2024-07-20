@@ -27,13 +27,13 @@ export default {
         {
           company: '한화 BEYOND SW 캠프',
           period: 'Oct 2023 - Apr 2024',
-          description: 'As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google\'s core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.',
+          description: '교육프로그램은 6개월 과정으로 백엔드 개발자 과정입니다. 백엔드 기술(JAVA, SPRING, SPRING BOOT)를 중점적으로 학습하였고 프론트 기술(Vue.js)과 DOCKER, JENKINS등과 같은 Devops 기술도 학습하였습니다.5번의 팀프로젝트로 협업능력을 키웠고 LINUX, GIT, GITHUB와 같은 능력도 향상시켰습니다. 이 부트캠프 경험으로 여러사람들과 협업하여 프로젝트를 진행하는 경험을 하여 프로젝트 능력을 발전시켰습니다.',
           logo: 'hanwha.png'
         },
         {
           company: '한림대학교 컴퓨터공학과',
           period: 'Mar 2016 - Feb 2023',
-          description: 'During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.',
+          description: '',
           logo: 'hallym.png'
         }
       ]

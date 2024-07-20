@@ -42,7 +42,7 @@ export default {
           github: 'https://github.com/orgs/9-1379/repositories',
           document: 'https://drive.google.com/drive/folders/1STHo8GCeXOdwqUNwRMNgFFPmqKjmcDMv',
           techStack: 'Linux, HTML, CSS, Vue.js, Java, Spring Boot, Jpa, Jwt, MariaDB, Nginx, Docker, Jenkins, AWS',
-          image: 'timebox-planner.png' // Image file can be added if needed
+          image: 'hrd.png' // Image file can be added if needed
         },
         {
           name: '개인 웹 포트폴리오',
@@ -70,7 +70,7 @@ export default {
         },
         {
           name: '감정표현을 더한 ToDoList',
-          description: '인사관리시스템 프론트엔드를 개발, 배포하였고 데이터베이스를 Json 서버로 따로 배포하여 관리하였습니다.',
+          description: 'ToDoList에 감정표현을 추가한 프로젝트로, 다수의 인원이 일정을 공유할 수 있는 서비스를 개발하였습니다.',
           github: 'https://github.com/hyunsungJoo/be01-2nd-5Team-To-Do-List',
           document: 'https://drive.google.com/drive/folders/1sSPMl0pjmu6vPPA6dkUTNJMtUYi4OV4P',
           techStack: 'Java, Spring Boot, Jpa, Jwt, MariaDB, Docker',
