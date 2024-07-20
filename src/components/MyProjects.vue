@@ -50,7 +50,7 @@ export default {
           github: 'https://github.com/hyunsungJoo/portfolio',
           document: '',
           techStack: 'Linux, HTML, CSS, Vue.js',
-          image: 'timebox-planner.png' // Image file can be added if needed
+          image: 'portfolio.png' // Image file can be added if needed
         },
         {
           name: '프로젝트 성능, 부하 테스트',
@@ -66,7 +66,7 @@ export default {
           github: 'https://github.com/orgs/Workflow-Ease/repositories',
           document: 'https://drive.google.com/drive/folders/1vtyhetWmrONe_bnrrJTmbZ5IBXi7wWdI',
           techStack: 'Linux, HTML, CSS, Vue.js, Fly.io, Firebase',
-          image: 'timebox-planner.png' // Image file can be added if needed
+          image: 'hrd-vue.png' // Image file can be added if needed
         },
         {
           name: '감정표현을 더한 ToDoList',
