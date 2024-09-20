@@ -35,6 +35,12 @@ export default {
           period: 'Mar 2016 - Feb 2023',
           description: '',
           logo: 'hallym.png'
+        },
+        {
+          company: '유진 ITS',
+          period: 'Aug 2024 - Now',
+          description: '그룹웨어 유지보수, SSO를 관리 하였으며 프로젝트로는 ERP와 그룹웨어 전자결제 문서 연동을 진행하였습니다. ',
+          logo: 'eugenes.png'
         }
       ]
     };
