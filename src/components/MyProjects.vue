@@ -3,7 +3,7 @@
     <h2>PROJECTS</h2>
     <div class="projects-container">
       <div class="project" v-for="project in projects" :key="project.name">
-        <div class="flip-card" :class="{ flipped: flippedProject === project.name }">
+        <div class="flip-card" :class="{ flipped: flippedProjects.includes(project.name) }">
           <div class="flip-card-inner">
             <!-- 카드 앞면 -->
             <div class="flip-card-front">
@@ -77,12 +77,17 @@ export default {
           image: 'todolist-project.png' // Image file can be added if needed
         },
       ],
-      flippedProject: null
+      flippedProjects: []
     };
   },
   methods: {
     flipCard(projectName) {
-      this.flippedProject = this.flippedProject === projectName ? null : projectName;
+      const index = this.flippedProjects.indexOf(projectName);
+      if (index > -1) {
+        this.flippedProjects.splice(index, 1);
+      } else {
+        this.flippedProjects.push(projectName);
+      }
     }
   }
 };

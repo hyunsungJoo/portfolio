@@ -75,10 +75,9 @@ export default {
 
 /* 이미지 설정 */
 .skill-icon {
-  width: 150px; /* 이미지의 너비를 동그라미의 크기에 맞게 설정 */
+  width: 50px; /* 이미지의 너비를 동그라미의 크기에 맞게 설정 */
   height: 50px; /* 이미지의 높이를 동그라미의 크기에 맞게 설정 */
   object-fit: contain; /* 이미지 비율을 유지하면서 크기 조정 */
-  border-radius: 50%; /* 이미지도 동그라미 형태로 보이게 설정 */
   margin-bottom: 5px; /* 이미지와 텍스트 사이의 간격 설정 */
 }
 
