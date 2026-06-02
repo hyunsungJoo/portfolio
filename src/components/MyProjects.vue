@@ -94,149 +94,174 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 .projects {
-  text-align: center;
-  color: purple;
-  padding: 20px;
-  font-family: 'Poppins', sans-serif;
-  background-color: #000000; /* 전체 배경색 */
+  padding: 5rem 2rem;
+  background-color: var(--bg-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease;
 }
 
 .projects h2 {
-  font-size: 35px;
-  font-weight: 800;
-  margin-bottom: 20px;
-  background: linear-gradient(to right, #ff7e5f, #feb47b); /* 오렌지 그라데이션 */
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.projects-wrapper {
-  padding: 0 15rem; /* 왼쪽과 오른쪽 여백 */
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+  letter-spacing: -1px;
+  transition: color 0.3s ease;
 }
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 한 줄에 카드 2개 */
-  gap: 20px; /* 카드 간의 간격 */
-  justify-content: center; /* 카드 중앙 정렬 */
-  margin-left: 15rem;
-  margin-right: 15rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project {
-  width: 100%; /* 부모 요소에 맞춰 너비 조정 */
-  max-width: 600px; /* 카드의 최대 너비 */
-  aspect-ratio: 4 / 3; /* 카드의 비율을 유지 */
-  perspective: 1000px; /* 카드 뒤집기 효과를 위한 시점 설정 */
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  perspective: 1000px;
 }
 
 .flip-card {
   position: relative;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d; /* 3D 변환 유지 */
-  transition: transform 0.6s; /* 카드가 뒤집힐 때의 전환 효과 */
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
 }
 
 .flip-card.flipped .flip-card-inner {
-  transform: rotateY(180deg); /* 카드가 180도 회전하여 뒤집힘 */
+  transform: rotateY(180deg);
 }
 
 .flip-card-inner {
   position: relative;
   width: 100%;
-  height: 100%; /* 카드의 고정 높이 */
+  height: 100%;
   transition: transform 0.6s;
-  transform-style: preserve-3d; /* 3D 변환 유지 */
+  transform-style: preserve-3d;
 }
 
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* 카드 뒷면이 보이지 않도록 설정 */
+  backface-visibility: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 .flip-card-front {
-  background-color: #aa9cbd;
-  color: #ffffff;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
   justify-content: flex-end;
-  box-sizing: border-box;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .flip-card-back {
-  background-color: #aa9cbd;
-  color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
   justify-content: space-between;
-  transform: rotateY(180deg); /* 카드 뒷면의 기본 회전 상태 */
+  padding: 1.5rem;
+  transform: rotateY(180deg);
   box-sizing: border-box;
+  overflow-y: auto;
+  transition: all 0.3s ease;
 }
 
 .project-image {
   width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0 0;
+  height: 100%;
+  object-fit: cover;
   flex: 1;
 }
 
 .project-info {
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 0 0 10px 10px;
+  padding: 1rem;
+  background: linear-gradient(to top, var(--bg-primary), rgba(0, 0, 0, 0.5));
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  gap: 1rem;
 }
 
 .project-info-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+  gap: 1rem;
 }
 
 .project-info h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   margin: 0;
+  color: var(--text-primary);
+  flex: 1;
+  transition: color 0.3s ease;
 }
 
 .more-info-button {
-  font-size: 16px;
-  color: #ffcc00;
+  font-size: 14px;
+  color: var(--color-cyan);
   text-decoration: none;
   cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.more-info-button:hover {
+  color: var(--color-orange);
 }
 
 .flip-card-back p {
-  font-size: 16px;
-  margin-bottom: 10px;
-  word-wrap: break-word; /* 긴 URL이 카드 밖으로 삐져나오지 않도록 설정 */
+  font-size: 14px;
+  margin: 0.75rem 0;
+  word-wrap: break-word;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.flip-card-back strong {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 .flip-card-back a {
-  font-size: 16px;
-  color: #ffcc00;
+  color: var(--color-cyan);
   text-decoration: none;
-  word-wrap: break-word; /* 긴 URL이 카드 밖으로 삐져나오지 않도록 설정 */
+  transition: color 0.3s ease;
+  word-break: break-all;
+}
+
+.flip-card-back a:hover {
+  color: var(--color-orange);
 }
 
 .flip-card-back button {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #ff7e5f;
-  color: #ffffff;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-cyan);
+  color: var(--text-primary);
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.flip-card-back button:hover {
+  background-color: var(--color-orange);
 }
 </style>

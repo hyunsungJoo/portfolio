@@ -24,51 +24,58 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 .profile {
   display: flex;
-  flex-direction: column; /* 세로 방향으로 배치 */
-  align-items: center; /* 중앙 정렬 */
-  padding: 2rem;
-  background-color: #000000;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  font-family: 'Poppins', sans-serif; /* 전체에 적용 */
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem;
+  background-color: var(--bg-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease;
 }
 
 .profile-image-wrapper {
-  margin-bottom: 1rem; /* 사진과 소개글 사이에 여백 추가 */
+  margin-bottom: 2.5rem;
 }
 
 .profile-image {
-  margin-top: 2rem;
-  width: 213px;
-  height: 213px;
-  border-radius: 50%; /* 동그란 이미지 */
-  background: linear-gradient(0deg, #ff8600 0%, #8000ff 99%);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-orange) 100%);
   object-fit: cover;
+  border: 3px solid var(--border-color);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
 }
 
 .profile-details {
-  text-align: center; /* 텍스트 중앙 정렬 */
+  text-align: center;
+  max-width: 800px;
 }
 
 .profile-details h1 {
-  margin-top: 1rem;
-  font-size: 50px;
-  color: white;
-  font-weight: 900; /* extra bold */
+  margin-top: 0;
+  font-size: 48px;
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
 }
 
 .profile-details p {
-  font-size: 18px;
-  color: white;
-  line-height: 1.5;
-  margin-top: 0.5rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
-  font-weight: 200; /* light */
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-weight: 400;
+  margin: 0;
+  transition: color 0.3s ease;
 }
 </style>

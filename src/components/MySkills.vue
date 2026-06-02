@@ -35,55 +35,61 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 .skills {
-  text-align: center;
-  color: purple; /* 보라색 */
-  padding: 20px;
-  font-family: 'Poppins', sans-serif; /* Poppins 폰트 적용 */
-  background-color: #000000; /* 배경색을 검정색으로 설정 */
+  padding: 5rem 2rem;
+  background-color: var(--bg-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease;
 }
 
 .skills h2 {
-  font-size: 35px; /* 글씨 크기 설정 */
-  font-weight: 800; /* extra bold 설정 */
-  margin-bottom: 20px; /* 제목과 아이템 사이의 간격 설정 */
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+  letter-spacing: -1px;
+  transition: color 0.3s ease;
 }
 
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px; /* 아이템 사이의 간격 설정 */
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* 동그라미 안에 이미지와 텍스트를 포함한 설정 */
 .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #aa9cbd; /* 배경색을 지정 */
-  padding: 10px;
-  border-radius: 50%;
-  width: 80px; /* 원의 너비를 고정 */
-  height: 80px; /* 원의 높이를 고정 */
   justify-content: center;
-  box-sizing: border-box; /* 패딩과 보더를 너비에 포함 */
-  flex-shrink: 0; /* 줄어들지 않도록 설정 */
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+  border: 1.5px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* 이미지 설정 */
+.skill:hover {
+  background: linear-gradient(135deg, var(--color-cyan), var(--color-cyan));
+  border-color: var(--color-cyan);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(var(--color-cyan), 0.3);
+}
+
 .skill-icon {
-  width: 50px; /* 이미지의 너비를 동그라미의 크기에 맞게 설정 */
-  height: 50px; /* 이미지의 높이를 동그라미의 크기에 맞게 설정 */
-  object-fit: contain; /* 이미지 비율을 유지하면서 크기 조정 */
-  margin-bottom: 5px; /* 이미지와 텍스트 사이의 간격 설정 */
-}
-
-/* 한 줄에 정확히 7개의 아이템을 배치하기 위한 설정 */
-.skills-container {
-  width: calc(80px * 7 + 10px * 6); /* 7개 아이템과 6개의 간격을 포함 */
-  margin: 0 auto; /* 중앙 정렬 */
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 </style>

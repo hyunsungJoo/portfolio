@@ -31,74 +31,85 @@
   </script>
   
   <style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-  
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
   .contact {
-    padding: 2rem;
-    background-color: #191919;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    margin-top: 20px;
-  }
-  
-  .contact h2 {
-    font-size: 23px;
-    font-weight: 700;
-    margin-left: 15rem;
-    margin-bottom: 1rem;
-    text-align: left;
-  }
-  
-  .contact .description {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-left: 15rem;
-    margin-right: 20rem;
-    margin-bottom: 1.5rem;
-    text-align: left;
-  }
-  
-  .contact .email {
-    font-size: 14px;
-    font-weight: 600;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
-    margin-left: 15rem;
+    padding: 5rem 2rem;
+    background-color: var(--bg-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    transition: background-color 0.3s ease;
   }
 
-  .contact .phone {
-    font-size: 14px;
-    font-weight: 600;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
-    margin-left: 15rem;
+  .contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+    letter-spacing: -1px;
+    transition: color 0.3s ease;
   }
-  
+
+  .contact .description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+  }
+
+  .contact .email,
+  .contact .phone {
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    justify-content: center;
+    transition: color 0.3s ease;
+  }
+
   .contact .email-icon {
-    text-align: left;
     width: 20px;
     height: 20px;
-    margin-right: 0.5rem;
+    flex-shrink: 0;
+    opacity: 0.7;
   }
-  
+
   .social-icons {
     display: flex;
-    justify-content: left;
-    gap: 1rem;
-    margin-top: 1.5rem;
-    margin-left: 15rem;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
   }
-  
+
+  .social-icons a {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    background-color: var(--color-cyan);
+    border-color: var(--color-cyan);
+    transform: translateY(-4px);
+  }
+
   .social-icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
   }
   </style>
   

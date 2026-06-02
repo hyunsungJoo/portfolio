@@ -26,32 +26,37 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 .download-button-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  background-color: #000000;
-}
-
-.download-button {
-  width: 170px; /* 너비 설정 */
-  height: 30px; /* 높이 설정 */
-  background-color: #ffffff;
-  color: #000000;
-  padding: 10px 20px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif; /* Poppins 폰트 적용 */
-  font-size: 1rem;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  background-color: var(--bg-primary);
   transition: background-color 0.3s ease;
 }
 
+.download-button {
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-cyan) 100%);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(var(--color-cyan), 0.3);
+  border: 1px solid var(--color-cyan);
+}
+
 .download-button:hover {
-  background-color: #f0f0f0;
+  background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange) 100%);
+  border-color: var(--color-orange);
+  box-shadow: 0 6px 20px rgba(var(--color-orange), 0.4);
+  transform: translateY(-2px);
 }
 </style>
