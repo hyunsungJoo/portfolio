@@ -16,18 +16,21 @@ export default {
     return {
       skills: [
         { name: 'Java', icon: 'java.png' },
+        { name: 'Python', icon: 'python.png' },
         { name: 'Spring', icon: 'spring.png' },
         { name: 'MariaDB', icon: 'mariadb.png' },
-        { name: 'HTML5', icon: 'html.png' },
-        { name: 'CSS3', icon: 'css.png' },
         { name: 'JavaScript', icon: 'js.png' },
         { name: 'Vue.js', icon: 'vue.png' },
+        { name: 'Next.js', icon: 'nextjs.png' },
         { name: 'Docker', icon: 'docker.png' },
+        { name: 'Kubernetes', icon: 'kubernetes.png' },
         { name: 'Jenkins', icon: 'jenkins.png' },
         { name: 'AWS', icon: 'aws.png' },
+        { name: 'AZURE', icon: 'azure.png' },
         { name: 'Linux', icon: 'linux.png' },
         { name: 'Git', icon: 'git.png' },
-        { name: 'GitHub', icon: 'github.png' },
+        { name: 'PlayWright', icon: 'playwright.png' },
+        { name: 'N8N', icon: 'n8n.png' }
       ]
     };
   }

@@ -27,13 +27,15 @@ export default {
         {
           company: '유진 ITS',
           period: 'Aug 2024 - Now',
-          description: '그룹웨어 유지보수, SSO를 관리 하였으며 프로젝트로는 ERP와 그룹웨어 전자결제 문서 연동을 진행하였습니다. ',
+          description: 'Java 기반 그룹웨어 및 AWS 인프라 운영을 담당하며 Linux 서버 운영, Jenkins 기반 CI/CD 배포, ERP(SAP·더존) 연동, Microsoft 365 관리, 운영 자동화(Python, Playwright, n8n) 구축을 수행했습니다. 또한 SQL 성능 최적화, 로그 모니터링 구축, 보안 취약점 개선을 통해 서비스 안정성과 운영 효율을 향상시켰습니다.',
           logo: 'eugenes.png'
         },
         {
           company: '한화 BEYOND SW 캠프',
           period: 'Oct 2023 - Apr 2024',
-          description: '교육프로그램은 6개월 과정으로 백엔드 개발자 과정입니다. 백엔드 기술(JAVA, SPRING, SPRING BOOT)를 중점적으로 학습하였고 프론트 기술(Vue.js)과 DOCKER, JENKINS등과 같은 Devops 기술도 학습하였습니다.5번의 팀프로젝트로 협업능력을 키웠고 LINUX, GIT, GITHUB와 같은 능력도 향상시켰습니다. 이 부트캠프 경험으로 여러사람들과 협업하여 프로젝트를 진행하는 경험을 하여 프로젝트 능력을 발전시켰습니다.',
+          description: `- Java 백엔드 개발: 자바(Java) 기반 객체지향 프로그래밍 및 Spring Boot를 활용한 안정적인 RESTful API 서버 설계·구현
+- CI/CD 파이프라인 구축: Git, GitHub Actions/Jenkins 등을 활용한 빌드 및 배포 자동화 프로세스 구축 경험
+- DevOps & 인프라: Docker를 이용한 애플리케이션 컨테이너화 및 클라우드 환경 기반 서비스 배포·운영 역량 함양`,
           logo: 'hanwha.png'
         },
         {
@@ -56,6 +58,10 @@ export default {
   background-color: var(--bg-primary);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   transition: background-color 0.3s ease;
+}
+
+.description {
+  white-space: pre-line;
 }
 
 .experience h2 {

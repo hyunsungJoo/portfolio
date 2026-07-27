@@ -13,14 +13,14 @@
         <img src="@/assets/phone-icon.png" alt="Email Icon" class="email-icon">
         +82 10-6337-1867
       </p>
-      <div class="social-icons">
+      <!-- <div class="social-icons">
         <a href="https://github.com" target="_blank">
           <img src="@/assets/github-icon.png" alt="GitHub" class="social-icon">
         </a>
         <a href="https://velog.io" target="_blank">
           <img src="@/assets/velog-icon.png" alt="Velog" class="social-icon">
         </a>
-      </div>
+      </div> -->
     </div>
   </template>
   

@@ -37,6 +37,12 @@ export default {
     return {
       projects: [
         {
+          name: '할인 모아보기 웹, 모바일 사이트',
+          description: '직원들의 참여와 동기부여를 증진시키기위해 디지털 배지를 추가한 인사관리 시스템을 개발하였습니다.',
+          techStack: 'Linux, Next.js, Supabase, Docekr, jenkins, Playwright, N8N',
+          image: 'discount-moa.png' // Image file can be added if needed
+        },
+        {
           name: '디지털 배지를 더한 인사관리 시스템',
           description: '직원들의 참여와 동기부여를 증진시키기위해 디지털 배지를 추가한 인사관리 시스템을 개발하였습니다.',
           github: 'https://github.com/orgs/9-1379/repositories',
@@ -61,20 +67,16 @@ export default {
           image: 'devops-project.png' // Image file can be added if needed
         },
         {
-          name: '인사관리시스템 프론트엔드 개발',
+          name: '사내 테라피 예약 시스템',
           description: '인사관리시스템 프론트엔드를 개발, 배포하였고 데이터베이스를 Json 서버로 따로 배포하여 관리하였습니다.',
-          github: 'https://github.com/orgs/Workflow-Ease/repositories',
-          document: 'https://drive.google.com/drive/folders/1vtyhetWmrONe_bnrrJTmbZ5IBXi7wWdI',
-          techStack: 'Linux, HTML, CSS, Vue.js, Fly.io, Firebase',
-          image: 'hrd-vue.png' // Image file can be added if needed
+          techStack: 'Next.js, Vercel.app, Apps Script, Google Sheets',
+          image: 'muscle.png' // Image file can be added if needed
         },
         {
-          name: '감정표현을 더한 ToDoList',
+          name: '사내 식당 설문조사 시스템',
           description: 'ToDoList에 감정표현을 추가한 프로젝트로, 다수의 인원이 일정을 공유할 수 있는 서비스를 개발하였습니다.',
-          github: 'https://github.com/hyunsungJoo/be01-2nd-5Team-To-Do-List',
-          document: 'https://drive.google.com/drive/folders/1sSPMl0pjmu6vPPA6dkUTNJMtUYi4OV4P',
-          techStack: 'Java, Spring Boot, Jpa, Jwt, MariaDB, Docker',
-          image: 'todolist-project.png' // Image file can be added if needed
+          techStack: 'Next.js, Vercel.app, Apps Script, Google Sheets',
+          image: 'survey.png' // Image file can be added if needed
         },
       ],
       flippedProjects: []
